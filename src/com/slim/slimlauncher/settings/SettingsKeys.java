@@ -28,6 +28,9 @@ public interface SettingsKeys {
     public static final String KEY_HOMESCREEN_WIDTH_MARGIN = "homescreen_width_margin";
     public static final String KEY_SHOW_STATUS_BAR = "hide_status_bar";
 
+    public static final String KEY_ENABLE_HOTWORD = "enable_hotword";
+    public static final String KEY_DISABLE_HOTWORD_MUSIC = "disable_hotword_music";
+
     // General
     public static final String KEY_NOTIFICATION_BADGES = "notification_badges";
     public static final String KEY_LOCK_WORKSPACE = "lock_workspace";

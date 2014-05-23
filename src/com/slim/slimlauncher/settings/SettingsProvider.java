@@ -20,6 +20,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import java.util.Set;
+
 public class SettingsProvider implements SettingsKeys {
 
     public static final String SETTINGS_KEY = "com.slim.slimlauncher_preferences";
@@ -68,6 +70,14 @@ public class SettingsProvider implements SettingsKeys {
 
     public static void putString(Context context, String key, String value) {
         put(context).putString(key, value).commit();
+    }
+
+    public static Set<String> getStringSet(Context context, String key, Set<String> defValue) {
+        return get(context).getStringSet(key, defValue);
+    }
+
+    public static void putStringSet(Context context, String key, Set<String> value) {
+        put(context).putStringSet(key, value).commit();
     }
 
     public static boolean getBoolean(Context context, String key, boolean defValue) {
